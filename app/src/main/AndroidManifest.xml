@@ -12,31 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DispositivosMoviles"
         tools:targetApi="31">
-
-        <!-- 1. MainActivity es ahora la actividad principal (LAUNCHER) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".Fibonacci.FibonacciActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- 2. El resto de las actividades, declaradas pero no como LAUNCHER -->
-        <activity
-            android:name=".ArrayTestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Calculator.CalculatorActivity"
-            android:exported="false" />
         <activity
             android:name=".Lifecycle.LifecycleActivity"
             android:exported="false" />
         <activity
-            android:name=".Fibonacci.FibonacciActivity"
+            android:name=".ArrayTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Calculator.CalculatorActivity"
             android:exported="false" />
 
     </application>
 
 </manifest>
+
